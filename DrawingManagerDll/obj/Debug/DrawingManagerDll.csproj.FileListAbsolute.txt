@@ -23,3 +23,8 @@ C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerDll\bin\Debug\Drawin
 C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.csprojResolveAssemblyReference.cache
 C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.dll
 C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.pdb
+E:\GitHub Code\DrawingManager2\DrawingManagerDll\bin\Debug\DrawingManagerDll.dll
+E:\GitHub Code\DrawingManager2\DrawingManagerDll\bin\Debug\DrawingManagerDll.pdb
+E:\GitHub Code\DrawingManager2\DrawingManagerDll\obj\Debug\DrawingManagerDll.csprojResolveAssemblyReference.cache
+E:\GitHub Code\DrawingManager2\DrawingManagerDll\obj\Debug\DrawingManagerDll.dll
+E:\GitHub Code\DrawingManager2\DrawingManagerDll\obj\Debug\DrawingManagerDll.pdb

@@ -11,7 +11,7 @@ namespace DrawingManagerApp.Views
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
+            DataContext = new DrawingManagerViewModel();
         }
     }
 }

@@ -14,17 +14,17 @@ using DrawingManagerApp.Commands;
 
 namespace DrawingManagerApp.ViewModels
 {
-    class MainViewModel : INotifyPropertyChanged
+    public class DrawingManagerViewModel : ViewModelBase
     {
         #region declarations
 
+        private ViewModelBase _currentViewModel;
         string _xmlFilePath = Directory.GetCurrentDirectory() + "\\Datafile.xml";
-
 
         #endregion
 
 
-        public MainViewModel()
+        public DrawingManagerViewModel()
         {            
             //FORANDRING nummer to 123
             //FORANDRING nummer to 123
@@ -53,30 +53,29 @@ namespace DrawingManagerApp.ViewModels
             //Leser inn innholdet i XML-filen. Dette skal lagres i en liste som skal vises i DataContext.
             using (XmlReader reader = XmlReader.Create(_xmlFilePath))
             {
-                while (reader.Read())
-                {
-                    switch (reader.NodeType)
-                    {
-                        case XmlNodeType.Element:
-                            //Kode lages etter at xml-struktur er bestemt.
-                            break;
-                        case XmlNodeType.Text:
-                            //Kode lages etter at xml-struktur er bestemt.
-                            break;
-                        case XmlNodeType.EndElement:
-                            //Kode lages etter at xml-struktur er bestemt.
-                            break;
-                    }
-                }
+                //while (reader.Read())
+                //{
+                //    switch (reader.NodeType)
+                //    {
+                //        case XmlNodeType.Element:
+                //            //Kode lages etter at xml-struktur er bestemt.
+                //            break;
+                //        case XmlNodeType.Text:
+                //            //Kode lages etter at xml-struktur er bestemt.
+                //            break;
+                //        case XmlNodeType.EndElement:
+                //            //Kode lages etter at xml-struktur er bestemt.
+                //            break;
+                //    }
+                //}
             }
 
         }
 
-        public void OpenFileFolderWindow(FileFoldersWindow window)
+        public void OpenFileFolderWindow()
         {
-            FileFoldersWindow win = new FileFoldersWindow();
-            win.Show();
-            OnPropertyChanged();
+            FileFoldersViewModel model = new FileFoldersViewModel(_xmlFilePath);
+            CurrentViewModel = model;
         }
 
         #endregion
@@ -89,9 +88,19 @@ namespace DrawingManagerApp.ViewModels
             set
             {
                 _xmlFilePath = value;
-                OnPropertyChanged();
+                OnPropertyChanged("XMLFilePath");
             }
 
+        }
+
+        public ViewModelBase CurrentViewModel
+        {
+            get { return _currentViewModel; }
+            set
+            {
+                _currentViewModel = value;
+                this.OnPropertyChanged("CurrentViewModel");
+            }
         }
 
         public ICommand FileFoldersCommand { get; set; }
@@ -99,17 +108,6 @@ namespace DrawingManagerApp.ViewModels
         #endregion
 
 
-        #region PropertyChanged
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        protected virtual void OnPropertyChanged(string propertyName = null)
-        {
-            var handler = PropertyChanged;
-            if (handler != null) handler(this, new PropertyChangedEventArgs(propertyName));
-        }
-
-        #endregion
 
     }
 }

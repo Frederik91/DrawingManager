@@ -62,3 +62,17 @@ C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerApp\obj\Debug\Drawin
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe.config
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.exe
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.pdb
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\bin\Debug\DrawingManagerApp.pdb
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.csprojResolveAssemblyReference.cache
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\Views\MainWindow.baml
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\Views\MainWindow.g.cs
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\App.g.cs
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp_MarkupCompile.cache
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp_MarkupCompile.lref
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.g.resources
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.Properties.Resources.resources
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.csproj.GenerateResource.Cache
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\Views\FileFoldersView.g.cs
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\Views\FileFoldersView.baml

@@ -11,10 +11,10 @@ namespace DrawingManagerApp.Commands
 {
     class FileFoldersCommand : ICommand
     {
-        private readonly MainViewModel _mainViewModel;
+        private readonly DrawingManagerViewModel _mainViewModel;
 
 
-        public FileFoldersCommand(MainViewModel mainViewModel)
+        public FileFoldersCommand(DrawingManagerViewModel mainViewModel)
         {
             _mainViewModel = mainViewModel;
         }
@@ -30,8 +30,7 @@ namespace DrawingManagerApp.Commands
 
         public void Execute(object parameter)
         {
-            FileFoldersWindow window = new FileFoldersWindow();
-            _mainViewModel.OpenFileFolderWindow(window);
+            _mainViewModel.OpenFileFolderWindow();
         }
 
         public event EventHandler CanExecuteChanged

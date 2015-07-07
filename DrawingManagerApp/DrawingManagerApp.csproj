@@ -54,7 +54,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Views\FileFoldersWindow.xaml">
+    <Page Include="Views\FileFoldersView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -68,9 +68,10 @@
     </Compile>
     <Compile Include="Commands\FileFoldersCommand.cs" />
     <Compile Include="ViewModels\FileFoldersViewModel.cs" />
-    <Compile Include="ViewModels\MainViewModel.cs" />
-    <Compile Include="Views\FileFoldersWindow.xaml.cs">
-      <DependentUpon>FileFoldersWindow.xaml</DependentUpon>
+    <Compile Include="ViewModels\DrawingManagerViewModel.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
+    <Compile Include="Views\FileFoldersView.xaml.cs">
+      <DependentUpon>FileFoldersView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
