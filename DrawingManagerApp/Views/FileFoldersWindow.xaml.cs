@@ -10,6 +10,7 @@ namespace DrawingManagerApp.Views
     {
         public FileFoldersWindow()
         {
+
             InitializeComponent();
             DataContext = new FileFoldersViewModel();
         }

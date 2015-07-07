@@ -27,3 +27,19 @@ E:\Dropbox\Visual Studio 2013\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\
 E:\Dropbox\Visual Studio 2013\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\FileFoldersWindow.g.cs
 E:\Dropbox\Visual Studio 2013\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp_MarkupCompile.lref
 E:\Dropbox\Visual Studio 2013\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\FileFoldersWindow.baml
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe.config
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.exe
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.pdb
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.csprojResolveAssemblyReference.cache
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\Views\MainWindow.baml
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\Views\FileFoldersWindow.g.cs
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\App.g.cs
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp_MarkupCompile.cache
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp_MarkupCompile.lref
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.pdb
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\Views\FileFoldersWindow.baml
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.g.resources
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.Properties.Resources.resources
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.csproj.GenerateResource.Cache

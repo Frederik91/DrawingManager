@@ -13,3 +13,8 @@ E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\obj\Debu
 E:\Dropbox\Visual Studio 2013\GitHub\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.csprojResolveAssemblyReference.cache
 E:\Dropbox\Visual Studio 2013\GitHub\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.dll
 E:\Dropbox\Visual Studio 2013\GitHub\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.pdb
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerDll\bin\Debug\DrawingManagerDll.dll
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerDll\bin\Debug\DrawingManagerDll.pdb
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.csprojResolveAssemblyReference.cache
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.dll
+C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.pdb
