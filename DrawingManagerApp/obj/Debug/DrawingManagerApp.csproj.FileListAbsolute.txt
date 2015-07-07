@@ -59,3 +59,6 @@ C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerApp\obj\Debug\Views\
 C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.g.resources
 C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.Properties.Resources.resources
 C:\Users\MariusNorøy\GIT Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.csproj.GenerateResource.Cache
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe.config
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.exe
+E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.pdb

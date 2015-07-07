@@ -27,8 +27,8 @@ namespace DrawingManagerApp.ViewModels
         public MainViewModel()
         {
             
-            //FORANDRING nummer to yolo
-            //FORANDRING nummer to yolo
+            //FORANDRING nummer to 123
+            //FORANDRING nummer to 123
             //FORANDRING nummer to yolo//FORANDRING nummer to yolo
             //FORANDRING nummer to yolo
             startupSequence();
