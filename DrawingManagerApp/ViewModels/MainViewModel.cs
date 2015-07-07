@@ -32,7 +32,6 @@ namespace DrawingManagerApp.ViewModels
             //FORANDRING nummer to yolo
             //FORANDRING nummer to yolo
             //FORANDRING nummer to yolo
-            //FORANDRING nummer to yolo
             //FORANDRING nummer to yolo//FORANDRING nummer to yolo
             //FORANDRING nummer to yolo
             startupSequence();

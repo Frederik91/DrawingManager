@@ -43,3 +43,6 @@ C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\
 C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.g.resources
 C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.Properties.Resources.resources
 C:\Users\Frederik\Documents\GitHubVisualStudio\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.csproj.GenerateResource.Cache
+C:\Users\Frederik\Source\Repos\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe.config
+C:\Users\Frederik\Source\Repos\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.exe
+C:\Users\Frederik\Source\Repos\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.pdb
