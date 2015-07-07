@@ -26,7 +26,7 @@ namespace DrawingManagerApp.ViewModels
 
         public MainViewModel()
         {
-            //FORANDRING
+            //FORANDRING nummer to yolo
             startupSequence();
             FileFoldersCommand = new FileFoldersCommand(this);
         }
