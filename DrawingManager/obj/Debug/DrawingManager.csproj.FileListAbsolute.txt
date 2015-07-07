@@ -1,0 +1,17 @@
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\bin\Debug\DrawingManager.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\bin\Debug\DrawingManager.pdb
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\bin\Debug\AcCoreMgd.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\bin\Debug\AcCui.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\bin\Debug\AcDbMgd.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\bin\Debug\AcMgd.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\bin\Debug\AdWindows.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\bin\Debug\AcTcMgd.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\DrawingManager.csprojResolveAssemblyReference.cache
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\DrawingManager_MarkupCompile.cache
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\DrawingManager.g.resources
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\DrawingManager.Properties.Resources.resources
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\DrawingManager.csproj.GenerateResource.Cache
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\DrawingManager.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\DrawingManager.pdb
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\Views\MainWindow.baml
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManager\obj\Debug\Views\MainWindow.g.cs

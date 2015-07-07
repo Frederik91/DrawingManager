@@ -1,0 +1,12 @@
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.csprojResolveAssemblyReference.cache
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\DrawingManagerDll.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\DrawingManagerDll.pdb
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\AcCoreMgd.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\AcCui.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\AcDbMgd.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\acdbmgdbrep.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\AcMgd.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\AdWindows.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\bin\Debug\AcTcMgd.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.dll
+E:\Dropbox\Visual Studio 2013\Projects\DrawingManager\DrawingManagerDll\obj\Debug\DrawingManagerDll.pdb
