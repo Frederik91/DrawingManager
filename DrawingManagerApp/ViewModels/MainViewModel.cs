@@ -27,10 +27,8 @@ namespace DrawingManagerApp.ViewModels
         public MainViewModel()
         {
             
-            //FORANDRING nummer to yolo
-            //FORANDRING nummer to yolo
-            //FORANDRING nummer to yolo//FORANDRING nummer to yolo
-            //FORANDRING nummer to yolo
+           //dette er noe sykt kult som heter merge,
+            //det er ikke skummelt
             startupSequence();
             FileFoldersCommand = new FileFoldersCommand(this);
         }
