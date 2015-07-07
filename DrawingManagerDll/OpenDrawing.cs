@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Autodesk.AutoCAD.ApplicationServices;
-using Autodesk.AutoCAD.Runtime;
+﻿using Autodesk.AutoCAD.ApplicationServices;
 using AcadApp = Autodesk.AutoCAD.ApplicationServices.Application;
 
 namespace DrawingManagerDll
@@ -13,7 +7,7 @@ namespace DrawingManagerDll
     {
         public void openDrawing(string filePath)
         {
-            Document oDoc = AcadApp.DocumentManager.Open(filePath, false);
+            //Document oDoc = AcadApp.DocumentManager.Open(filePath, false);
         }
     }
 }

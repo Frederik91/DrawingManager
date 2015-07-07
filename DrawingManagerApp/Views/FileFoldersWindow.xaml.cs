@@ -4,14 +4,14 @@ using DrawingManagerApp.ViewModels;
 namespace DrawingManagerApp.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for FileFoldersWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class FileFoldersWindow : Window
     {
-        public MainWindow()
+        public FileFoldersWindow()
         {
             InitializeComponent();
-            DataContext = new MainViewModel();
+            DataContext = new FileFoldersViewModel();
         }
     }
 }
