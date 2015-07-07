@@ -26,6 +26,7 @@ namespace DrawingManagerApp.ViewModels
 
         public MainViewModel()
         {
+            //FORANDRING
             startupSequence();
             FileFoldersCommand = new FileFoldersCommand(this);
         }
