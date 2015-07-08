@@ -206,3 +206,4 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+DrawingManagerApp/bin/Debug/DrawingManagerApp.vshost.exe
