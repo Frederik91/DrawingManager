@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DrawingManagerApp.ViewModels;
+using DrawingManagerApp.Views;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;

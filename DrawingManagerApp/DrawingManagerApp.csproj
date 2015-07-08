@@ -66,6 +66,7 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Commands\DelegateCommand.cs" />
     <Compile Include="Commands\FileFoldersCommand.cs" />
     <Compile Include="ViewModels\FileFoldersViewModel.cs" />
     <Compile Include="ViewModels\DrawingManagerViewModel.cs" />

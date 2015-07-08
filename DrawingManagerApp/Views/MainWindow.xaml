@@ -14,7 +14,7 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="300"/>
         </Grid.RowDefinitions>
         <Menu  Background="LightSlateGray" Grid.Row="0">
             <MenuItem Header="File" Grid.Row="0">
@@ -39,7 +39,7 @@
             <TextBlock Grid.Row="0" Grid.ColumnSpan="2" FontSize="24" HorizontalAlignment="Center" Foreground="Orange" Text="Drawing Manager"/>
         </Grid>
         
-        <ContentControl Content="{Binding Path=CurrentViewModel}" Grid.Row="3" Grid.Column="1" />
+        <ContentControl Content="{Binding Path=CurrentViewModel}" Grid.Row="1" HorizontalAlignment="Left" Width="517" />
 
     </Grid>
     

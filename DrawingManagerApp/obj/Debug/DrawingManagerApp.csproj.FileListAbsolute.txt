@@ -76,3 +76,20 @@ E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.csp
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\Views\FileFoldersView.g.cs
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\Views\FileFoldersView.baml
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe.config
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.exe
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.pdb
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.pdb
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.csprojResolveAssemblyReference.cache
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\FileFoldersView.g.cs
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\MainWindow.g.cs
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\App.g.cs
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp_MarkupCompile.cache
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp_MarkupCompile.lref
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\FileFoldersView.baml
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\MainWindow.baml
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.g.resources
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.Properties.Resources.resources
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.csproj.GenerateResource.Cache

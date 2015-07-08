@@ -31,8 +31,12 @@ namespace DrawingManagerApp.ViewModels
             //dette er noe sykt kult som heter merge,
             //det er ikke skummelt
             startupSequence();
-            FileFoldersCommand = new FileFoldersCommand(this);
+            FileFoldersCommand = new DelegateCommand(o => OpenFileFolderWindow());
         }
+
+
+        public ICommand FileFoldersCommand { get; private set; }
+
 
 
         #region Methods
@@ -103,7 +107,6 @@ namespace DrawingManagerApp.ViewModels
             }
         }
 
-        public ICommand FileFoldersCommand { get; set; }
 
         #endregion
 
