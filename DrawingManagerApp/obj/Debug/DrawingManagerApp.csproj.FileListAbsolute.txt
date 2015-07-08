@@ -49,3 +49,6 @@ C:\Users\Frederik\Source\Repos\DrawingManager\DrawingManagerApp\obj\Debug\Drawin
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe.config
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.exe
 E:\GitHub Code\DrawingManager2\DrawingManagerApp\obj\Debug\DrawingManagerApp.pdb
+D:\GitHub Code\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe.config
+D:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.exe
+D:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.pdb
