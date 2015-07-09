@@ -8,7 +8,8 @@ namespace DrawingManagerApp.Models
 {
     class FilePathList
     {
-        public string FolderPathName { get; set; }
+        public List<string> FolderPathName { get; set; }
+        public string FolderPath { get; set; }
         public string Filename { get; set; }
     }
 }

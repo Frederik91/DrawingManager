@@ -2,7 +2,10 @@
 <DrawingManagerXML>
   <Settings>
     <Folderpaths>
-      <FolderPath PathName="3213" FolderPath="3213" />
+      <FolderPath PathName="Føringsveier" FolderPath="E41" />
+      <FolderPath PathName="Lys" FolderPath="E44" />
+      <FolderPath PathName="Tekniske installasjoner" FolderPath="E43" />
+      <FolderPath PathName="Brann" FolderPath="E55" />
     </Folderpaths>
   </Settings>
   <Data />

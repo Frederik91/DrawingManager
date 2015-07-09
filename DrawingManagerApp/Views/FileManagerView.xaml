@@ -19,8 +19,23 @@
         <ComboBox/>
         <TextBox Grid.Column="1"/>
         <Button Content="Legg til" Grid.Column="2" Command="{Binding SubmitNewFileCommand}"/>
-        <DataGrid Grid.Row="1" Grid.ColumnSpan="3" ItemsSource="{Binding FilePathList}">
+        <DataGrid Grid.Row="1" Grid.ColumnSpan="3" ItemsSource="{Binding FilePathList}" AutoGenerateColumns="false">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Width="100" Header="FolderName">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <ComboBox ItemsSource="{Binding FolderPathName}"/>
+                        </DataTemplate>                        
+                    </DataGridTemplateColumn.CellTemplate>                    
+                </DataGridTemplateColumn>
+                <DataGridTemplateColumn Width="400" Header="Filename">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <TextBox Text="{Binding Filename}"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
         </DataGrid>
-
     </Grid>
 </UserControl>

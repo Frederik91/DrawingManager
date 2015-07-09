@@ -16,7 +16,8 @@ namespace DrawingManagerApp.ViewModels
     {
         private string _xmlFilePath;
 
-        private List<FilePathList> _filePathList = new List<FilePathList>();
+        private List<FilePathList> _filePathList = new List<Models.FilePathList>();
+        private List<string> _pathNameList = new List<string>();
 
 
         public FileManagerViewModel(string filePath)
@@ -32,25 +33,38 @@ namespace DrawingManagerApp.ViewModels
 
         private void startupSequence()
         {
-
-            using (XmlReader reader = XmlReader.Create(_xmlFilePath))
+            List<string> folderPathNameList = new List<string>();
+            for (int i = 0; i < 2; i++)
             {
-                reader.MoveToContent();
-                while (reader.Read())
+                using (XmlReader reader = XmlReader.Create(_xmlFilePath))
                 {
-                    if (reader.NodeType == XmlNodeType.Element)
+                    reader.MoveToContent();
+                    while (reader.Read())
                     {
-                        if (reader.Name == "FolderPath")
+                        if (reader.NodeType == XmlNodeType.Element)
                         {
-                            XElement el = (XElement)XNode.ReadFrom(reader);
-                            _filePathList.Add(new FilePathList { FolderPathName = el.Attribute("PathName").Value });
+                            if (reader.Name == "FolderPath")
+                            {
+                                if (i == 0)
+                                {
+                                    XElement el = (XElement)XNode.ReadFrom(reader);
+
+                                    PathNameList.Add(el.Attribute("PathName").Value);
+                                }
+                                if (i == 1)
+                                {
+                                    XElement el = (XElement)XNode.ReadFrom(reader);
+
+                                    _filePathList.Add(new FilePathList { FolderPathName = PathNameList, FolderPath = el.Attribute("FolderPath").Value });
+                                }
+
+                            }
                         }
                     }
                 }
             }
 
             _filePathList = _filePathList.OrderBy(x => x.FolderPathName).ThenBy(x => x.Filename).ToList();
-
         }
 
         private void addNewFileToList()
@@ -65,6 +79,16 @@ namespace DrawingManagerApp.ViewModels
             {
                 _filePathList = value;
                 OnPropertyChanged("FilePathList");
+            }
+        }
+
+        public List<string> PathNameList
+        {
+            get { return _pathNameList; }
+            set
+            {
+                _pathNameList = value;
+                OnPropertyChanged("PathNameList");
             }
         }
 
