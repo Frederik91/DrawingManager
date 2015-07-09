@@ -9,6 +9,9 @@
         <DataTemplate DataType="{x:Type ViewModels:FileFoldersViewModel}">
             <Views:FileFoldersView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type ViewModels:FileManagerViewModel}">
+            <Views:FileManagerView/>
+        </DataTemplate>
     </Window.Resources>
 
     <Grid>
@@ -22,8 +25,8 @@
             </MenuItem>
             <MenuItem Header="Edit" Grid.Row="0">
                 <MenuItem Header="Edit attribute settings" Command="{Binding AttSetupCommand}"/>
-                <MenuItem Header="File folders" Command="{Binding FileFoldersCommand}"/>
-                <MenuItem Header="Add new file" Command="{Binding AddNewFileCommand}"/>
+                <MenuItem Header="Folder manager" Command="{Binding FileFoldersCommand}"/>
+                <MenuItem Header="File manager" Command="{Binding FileManagerCommand}"/>
             </MenuItem>            
         </Menu>
         <Grid Grid.Row="1">

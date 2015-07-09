@@ -96,3 +96,5 @@ C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Drawin
 D:\GitHub Code\DrawingManager\DrawingManagerApp\bin\Debug\DrawingManagerApp.exe.config
 D:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.exe
 D:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.pdb
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\FileManagerView.g.cs
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\FileManagerView.baml

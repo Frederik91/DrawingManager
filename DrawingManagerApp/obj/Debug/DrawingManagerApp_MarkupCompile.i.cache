@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\App.xaml
-21908222673
+3325366721
 
-15477026412
+181974135211
 12-114506869
-Views\FileFoldersView.xaml;Views\MainWindow.xaml;
+Views\FileFoldersView.xaml;Views\FileManagerView.xaml;Views\MainWindow.xaml;
 
-False
+True
 

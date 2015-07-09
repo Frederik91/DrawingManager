@@ -26,16 +26,14 @@ namespace DrawingManagerApp.ViewModels
 
         public DrawingManagerViewModel()
         {
-            //FORANDRING nummer to 123
-            //FORANDRING nummer to 123
-            //dette er noe sykt kult som heter merge,
-            //det er ikke skummelt
             startupSequence();
             FileFoldersCommand = new DelegateCommand(o => OpenFileFolderWindow());
+            FileManagerCommand = new DelegateCommand(o => OpenFileManagerWindow());
         }
 
 
         public ICommand FileFoldersCommand { get; private set; }
+        public ICommand FileManagerCommand { get; private set; }
 
 
 
@@ -43,8 +41,6 @@ namespace DrawingManagerApp.ViewModels
 
         private void startupSequence()
         {
-
-
             //Sjekker for XML-fil og lager ny dersom den ikke eksisterer.
             if (!File.Exists(_xmlFilePath))
             {
@@ -67,32 +63,17 @@ namespace DrawingManagerApp.ViewModels
                     MessageBox.Show("No XML-file found. New file created in location:" + _xmlFilePath);
                 }
             }
-
-            //Leser inn innholdet i XML-filen. Dette skal lagres i en liste som skal vises i DataContext.
-            //using (XmlReader reader = XmlReader.Create(_xmlFilePath))
-            //{
-                //while (reader.Read())
-                //{
-                //    switch (reader.NodeType)
-                //    {
-                //        case XmlNodeType.Element:
-                //            //Kode lages etter at xml-struktur er bestemt.
-                //            break;
-                //        case XmlNodeType.Text:
-                //            //Kode lages etter at xml-struktur er bestemt.
-                //            break;
-                //        case XmlNodeType.EndElement:
-                //            //Kode lages etter at xml-struktur er bestemt.
-                //            break;
-                //    }
-                //}
-            //}
-
         }
 
         public void OpenFileFolderWindow()
         {
             FileFoldersViewModel model = new FileFoldersViewModel(_xmlFilePath);
+            CurrentViewModel = model;
+        }
+
+        public void OpenFileManagerWindow()
+        {
+            FileManagerViewModel model = new FileManagerViewModel(_xmlFilePath);
             CurrentViewModel = model;
         }
 

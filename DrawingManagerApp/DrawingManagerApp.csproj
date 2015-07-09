@@ -58,6 +58,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\FileManagerView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,12 +71,17 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Commands\DelegateCommand.cs" />
+    <Compile Include="Models\FilePathList.cs" />
     <Compile Include="Models\FolderPathList.cs" />
     <Compile Include="ViewModels\FileFoldersViewModel.cs" />
     <Compile Include="ViewModels\DrawingManagerViewModel.cs" />
+    <Compile Include="ViewModels\FileManagerViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="Views\FileFoldersView.xaml.cs">
       <DependentUpon>FileFoldersView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FileManagerView.xaml.cs">
+      <DependentUpon>FileManagerView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
