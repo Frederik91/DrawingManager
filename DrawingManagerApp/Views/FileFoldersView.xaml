@@ -13,15 +13,9 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="350"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBox Grid.Row="0" Text="{Binding EditedFolderPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-        <Button Grid.Row="0" Grid.Column="1" Content="New" Command="{Binding NewFolderPathCommand}"/>
-        <Button Grid.Row="0" Grid.Column="2" Content="Edit" Command="{Binding EditFolderPathCommand}"/>
-        <Button Grid.Row="0" Grid.Column="3" Content="Delete" Command="{Binding DeleteFolderPathCommand}"/>
-        <ListBox Grid.Row="1" Grid.ColumnSpan="2" ItemsSource="{Binding FolderPathList}" SelectedItem="{Binding SelectedFolderPath}"/>        
+        <Button Grid.Row="0" Grid.Column="1" Content="Save Changes" Command="{Binding SaveFolderPathCommand}"/>
+        <DataGrid Grid.Row="1" ItemsSource="{Binding FolderPathList}" SelectedItem="{Binding SelectedFolderPath}"/>        
     </Grid>
 </UserControl>

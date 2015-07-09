@@ -11,16 +11,17 @@ using System.Xml;
 using System.Xml.Linq;
 using DrawingManagerApp.Commands;
 using System.Windows;
+using DrawingManagerApp.Models;
 
 namespace DrawingManagerApp.ViewModels
 {
     class FileFoldersViewModel : ViewModelBase
     {
         private string _xmlFilePath;
-        private string _selectedFolderPath;
-        private string _editedFolderPath;
 
-        private List<string> _folderPathList = new List<string>();
+        private List<FolderPathList> _folderPathList = new List<FolderPathList>();
+
+
         //Denne delen skal først lese eventuelle filbaner som er lagt inn i xml-filen og lagre de i en liste. 
         //Skal så ha mulighet for å lagre flere filbaner via user input. Lagres i filen når brukeren trykker på lagreknapp.
 
@@ -28,31 +29,79 @@ namespace DrawingManagerApp.ViewModels
         {
             _xmlFilePath = xmlFilePath;
 
-            NewFolderPathCommand = new DelegateCommand(o => MessageBox.Show("Test"));
-            DeleteFolderPathCommand = new DelegateCommand(o => MessageBox.Show("Test"));
-            EditFolderPathCommand = new DelegateCommand(o => updateFolderPathList());
+            SaveFolderPathCommand = new DelegateCommand(o => updateFolderPathList());
 
             readXMLFile();
         }
 
-        public ICommand EditFolderPathCommand { get; private set; }
-        public ICommand NewFolderPathCommand { get; private set; }
-        public ICommand DeleteFolderPathCommand { get; private set; }
+        public ICommand SaveFolderPathCommand { get; private set; }
 
 
         private void readXMLFile()
         {
             using (XmlReader reader = XmlReader.Create(_xmlFilePath))
             {
-                reader.ReadStartElement("Folderpaths");
-                while (reader.Name == "FolderPath")
+                reader.MoveToContent();
+                while (reader.Read())
                 {
-                    XElement el = (XElement)XNode.ReadFrom(reader);
-                    _folderPathList.Add(el.FirstNode.ToString());
+                    if (reader.NodeType == XmlNodeType.Element)
+                    {
+                        if (reader.Name == "FolderPath")
+                        {
+                            XElement el = (XElement)XNode.ReadFrom(reader);
+                            _folderPathList.Add(new FolderPathList { PathName = el.Attribute("PathName").Value, FolderPath = el.Attribute("FolderPath").Value });
+                        }
+                    }
                 }
-
-                reader.ReadEndElement();
             }
+
+            _folderPathList = _folderPathList.OrderBy(x => x.PathName).ThenBy(x => x.FolderPath).ToList();
+        }
+
+        private void updateFolderPathList()
+        {
+            XmlDocument doc = new XmlDocument();
+            doc.Load(_xmlFilePath);
+
+            XmlNode node = doc.SelectSingleNode("//Folderpaths");
+
+            if (node != null)
+            {
+                node.RemoveAll();
+            }
+            else
+            {
+                node = doc.SelectSingleNode("//Settings");
+
+                XmlElement folderpathsElement = doc.CreateElement("Folderpaths");
+
+                node.AppendChild(folderpathsElement);
+
+                node = doc.SelectSingleNode("//Folderpaths");
+            }
+
+            
+
+            foreach (var path in FolderPathList)
+            {
+                //Lag nytt element FolderPath
+                XmlElement folderpathElement = doc.CreateElement("FolderPath");
+                XmlAttribute PathNameAtt = doc.CreateAttribute("PathName");
+                XmlAttribute FolderPathAtt = doc.CreateAttribute("FolderPath");
+
+                PathNameAtt.Value = path.PathName;
+                FolderPathAtt.Value = path.FolderPath;
+
+                node.AppendChild(folderpathElement);
+
+                folderpathElement.Attributes.Append(PathNameAtt);
+                folderpathElement.Attributes.Append(FolderPathAtt);
+            }
+
+            string newXML = doc.OuterXml;
+
+            doc.Save(_xmlFilePath);
+
         }
 
         private void writeListToXMLFile()
@@ -62,30 +111,9 @@ namespace DrawingManagerApp.ViewModels
                 writer.WriteStartElement("Folderpaths");
                 foreach (var folderPath in _folderPathList)
                 {
-                    writer.WriteElementString("FolderPath", folderPath);
+                    writer.WriteElementString("FolderPath", folderPath.FolderPath);
                 }
                 writer.WriteEndElement();
-            }
-        }
-
-        public void updateFolderPathList()
-        {
-            if (EditedFolderPath != null)
-            {
-                List<string> tempFolderPathList = new List<string>();
-
-                foreach (var path in FolderPathList)
-                {
-                    if (path == SelectedFolderPath)
-                    {
-                        tempFolderPathList.Add(EditedFolderPath);
-                    }
-                    else
-                    {
-                        tempFolderPathList.Add(path);
-                    }
-                }
-                FolderPathList = tempFolderPathList.Distinct().ToList();
             }
         }
 
@@ -101,7 +129,7 @@ namespace DrawingManagerApp.ViewModels
             }
         }
 
-        public List<string> FolderPathList
+        public List<FolderPathList> FolderPathList
         {
             get { return _folderPathList; }
             set
@@ -110,32 +138,6 @@ namespace DrawingManagerApp.ViewModels
                 OnPropertyChanged("FolderPathList");
             }
         }
-
-        public string SelectedFolderPath
-        {
-            get { return _selectedFolderPath; }
-            set
-            {
-                _selectedFolderPath = value;
-                EditedFolderPath = value;
-                OnPropertyChanged("SelectedFolderPath");
-            }
-        }
-
-        public string EditedFolderPath
-        {
-            get
-            {
-                return _editedFolderPath;
-            }
-            set
-            {
-                _editedFolderPath = value;
-                OnPropertyChanged("EditedFolderPath");
-            }
-        }
-
-
 
         #endregion
 

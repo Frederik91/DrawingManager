@@ -25,7 +25,7 @@ namespace DrawingManagerApp.ViewModels
 
 
         public DrawingManagerViewModel()
-        {            
+        {
             //FORANDRING nummer to 123
             //FORANDRING nummer to 123
             //dette er noe sykt kult som heter merge,
@@ -44,19 +44,33 @@ namespace DrawingManagerApp.ViewModels
         private void startupSequence()
         {
 
+
             //Sjekker for XML-fil og lager ny dersom den ikke eksisterer.
             if (!File.Exists(_xmlFilePath))
             {
-                using (XmlWriter writer = XmlWriter.Create(_xmlFilePath))
+
+                XmlWriterSettings settings = new XmlWriterSettings();
+                settings.Indent = true;
+                settings.NewLineOnAttributes = true;
+
+                using (XmlWriter writer = XmlWriter.Create(_xmlFilePath, settings))
                 {
-                    writer.WriteComment("Drawing Manager XML Datafile");
+                    writer.WriteStartElement("DrawingManagerXML");
+
+                    writer.WriteStartElement("Settings");
+                    writer.WriteEndElement();
+                    writer.WriteStartElement("Data");
+                    writer.WriteEndElement();
+
+                    writer.WriteEndDocument();
+
                     MessageBox.Show("No XML-file found. New file created in location:" + _xmlFilePath);
                 }
             }
 
             //Leser inn innholdet i XML-filen. Dette skal lagres i en liste som skal vises i DataContext.
-            using (XmlReader reader = XmlReader.Create(_xmlFilePath))
-            {
+            //using (XmlReader reader = XmlReader.Create(_xmlFilePath))
+            //{
                 //while (reader.Read())
                 //{
                 //    switch (reader.NodeType)
@@ -72,7 +86,7 @@ namespace DrawingManagerApp.ViewModels
                 //            break;
                 //    }
                 //}
-            }
+            //}
 
         }
 

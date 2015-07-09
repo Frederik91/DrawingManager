@@ -1,1 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Folderpaths><FolderPath>testbane0</FolderPath><FolderPath>testbane1</FolderPath><FolderPath>testbane2</FolderPath><FolderPath>testbane3</FolderPath><FolderPath>testbane4</FolderPath><FolderPath>testbane5</FolderPath><FolderPath>testbane6</FolderPath><FolderPath>testbane7</FolderPath><FolderPath>testbane8</FolderPath><FolderPath>testbane9</FolderPath></Folderpaths>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DrawingManagerXML>
+  <Settings>
+    <Folderpaths>
+      <FolderPath PathName="3213" FolderPath="3213" />
+    </Folderpaths>
+  </Settings>
+  <Data />
+</DrawingManagerXML>

@@ -67,7 +67,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Commands\DelegateCommand.cs" />
-    <Compile Include="Commands\FileFoldersCommand.cs" />
+    <Compile Include="Models\FolderPathList.cs" />
     <Compile Include="ViewModels\FileFoldersViewModel.cs" />
     <Compile Include="ViewModels\DrawingManagerViewModel.cs" />
     <Compile Include="ViewModels\ViewModelBase.cs" />
@@ -108,7 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Helpers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
