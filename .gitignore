@@ -206,3 +206,5 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+DrawingManagerApp/obj/Debug/DrawingManagerApp_MarkupCompile.i.cache
+.vs/DrawingManager/v14/.suo
