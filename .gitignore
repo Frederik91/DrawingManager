@@ -212,3 +212,5 @@ FakesAssemblies/
 *.cache
 *.lref
 *.baml
+*.suo
+*.cache

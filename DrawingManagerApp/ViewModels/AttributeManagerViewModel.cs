@@ -12,12 +12,15 @@ namespace DrawingManagerApp.ViewModels
     class AttributeManagerViewModel : ViewModelBase
     {
         private string _xmlFilePath;
+        private List<AttributeList> _AttributeList = new List<Models.AttributeList>();
+
 
         public AttributeManagerViewModel(string filePath)
         {
             _xmlFilePath = filePath;
 
             checkXMLContaintsAttributes();
+            readFilesFromXML();
 
         }
 
@@ -44,6 +47,8 @@ namespace DrawingManagerApp.ViewModels
             }
         }
 
+
+        /*
         private void readFilesFromXML()
         {
             using (XmlReader reader = XmlReader.Create(_xmlFilePath))
@@ -53,14 +58,33 @@ namespace DrawingManagerApp.ViewModels
                 {
                     if (reader.NodeType == XmlNodeType.Element)
                     {
-                        if (reader.Name == "File")
+                        if (reader.Name == "")
                         {
                             XElement el = (XElement)XNode.ReadFrom(reader);
-                            FilePathList.Add(new FilePathList { Filename = el.Attribute("Filename").Value, SelectedFolderPathName = el.Attribute("FolderPathName").Value, FolderPathName = _folderPathNameList });
+                            AttributeList.Add(new AttributeList {
+                                AttributeIDList = el.Attribute("Filename").Value,
+                                AttributeNameList = el.Attribute("A1").Value,
+                            });
                         }
                     }
                 }
             }
         }
+
+    */
+
+        #region Properties
+
+        public List<AttributeList> AttributeList
+        {
+            get { return _AttributeList; }
+            set
+            {
+                _AttributeList = value;
+                OnPropertyChanged("FileAttributeList");
+            }
+        }
+
+        #endregion
     }
 }

@@ -75,6 +75,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Commands\DelegateCommand.cs" />
+    <Compile Include="Models\AttributeList.cs" />
     <Compile Include="Models\FilePathList.cs" />
     <Compile Include="Models\FolderPathList.cs" />
     <Compile Include="ViewModels\AttributeManagerViewModel.cs" />
