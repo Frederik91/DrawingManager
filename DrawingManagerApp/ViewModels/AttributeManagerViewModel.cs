@@ -44,7 +44,6 @@ namespace DrawingManagerApp.ViewModels
             }
         }
 
-        /*
         private void readFilesFromXML()
         {
             using (XmlReader reader = XmlReader.Create(_xmlFilePath))
@@ -63,7 +62,5 @@ namespace DrawingManagerApp.ViewModels
                 }
             }
         }
-        */
-
     }
 }

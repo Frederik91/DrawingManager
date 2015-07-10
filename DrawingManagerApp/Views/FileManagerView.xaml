@@ -5,42 +5,48 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DrawingManagerApp.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="600" d:DesignWidth="1000">
-    
-    <Grid Background="white">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="25"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="25"/>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="150"/>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="60"/>
-        </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" FontSize="24" HorizontalAlignment="Center" Foreground="Orange" Text="File Manager"/>
-        <ComboBox Grid.Row="1"  ItemsSource="{Binding FolderPathNameList}" SelectedItem="{Binding SelectedPathName}"/>
-        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NewFileName, UpdateSourceTrigger=PropertyChanged}"/>
-        <Button Content="Add" Grid.Row="1" Grid.Column="2" Command="{Binding SubmitNewFileCommand}"/>
-        <DataGrid Grid.Row="2" Grid.ColumnSpan="3" ItemsSource="{Binding FilePathList, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="false" CanUserAddRows="false" Height="600">
-            <DataGrid.Columns>
-                <DataGridTemplateColumn Width="Auto" Header="FolderName">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <ComboBox ItemsSource="{Binding FolderPathName}" SelectedItem="{Binding SelectedFolderPathName, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" IsEditable="False" />
-                        </DataTemplate>                        
-                    </DataGridTemplateColumn.CellTemplate>                    
-                </DataGridTemplateColumn>
-                <DataGridTemplateColumn Width="500" Header="Filename">
-                    <DataGridTemplateColumn.CellTemplate>
-                        <DataTemplate>
-                            <TextBox Text="{Binding Filename, UpdateSourceTrigger=PropertyChanged}"/>
-                        </DataTemplate>
-                    </DataGridTemplateColumn.CellTemplate>
-                </DataGridTemplateColumn>
-            </DataGrid.Columns>
-        </DataGrid>
-        <Button Content="Save Changes" Grid.Row="3" Grid.ColumnSpan="3" Command="{Binding SaveChangesCommand}"/>
+             d:DesignHeight="700" d:DesignWidth="1000">
+
+    <Grid Background="white"  Height="Auto">
+        <Grid Height="Auto">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.ColumnSpan="3" FontSize="24" HorizontalAlignment="Center" Foreground="Orange" Text="File Manager"/>
+            <ComboBox Grid.Row="1"  ItemsSource="{Binding FolderPathNameList}" SelectedItem="{Binding SelectedPathName}"/>
+            <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding NewFileName, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Content="Add" Grid.Row="1" Grid.Column="2" Command="{Binding SubmitNewFileCommand}"/>
+            <ScrollViewer Grid.Row="2" Grid.ColumnSpan="3" ScrollViewer.VerticalScrollBarVisibility="Auto" Height="Auto">
+                <DataGrid ItemsSource="{Binding FilePathList, Mode=TwoWay, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" AutoGenerateColumns="false" CanUserAddRows="false">
+                    <DataGrid.Columns>
+                        <DataGridTemplateColumn Width="Auto" Header="FolderName">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <ComboBox ItemsSource="{Binding FolderPathName}" SelectedItem="{Binding SelectedFolderPathName, UpdateSourceTrigger=PropertyChanged}" IsReadOnly="True" IsEditable="False" />
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn Width="500" Header="Filename">
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBox Text="{Binding Filename, UpdateSourceTrigger=PropertyChanged}"/>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+            <Button Content="Save Changes" Grid.Row="3" Grid.ColumnSpan="3" Command="{Binding SaveChangesCommand}"/>
+        </Grid>
     </Grid>
+
+
 </UserControl>

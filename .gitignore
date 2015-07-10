@@ -206,3 +206,9 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+*.cs
+*.cs
+*.resources
+*.cache
+*.lref
+*.baml
