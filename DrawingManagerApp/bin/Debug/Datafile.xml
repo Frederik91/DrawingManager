@@ -2,11 +2,22 @@
 <DrawingManagerXML>
   <Settings>
     <Folderpaths>
-      <FolderPath PathName="Føringsveier" FolderPath="E41" />
-      <FolderPath PathName="Lys" FolderPath="E44" />
-      <FolderPath PathName="Tekniske installasjoner" FolderPath="E43" />
-      <FolderPath PathName="Brann" FolderPath="E55" />
+      <FolderPath PathName="Brann" FolderPath="O:\A050000\A051350\3.7 Tegninger\E40 RIE\E52" />
+      <FolderPath PathName="Føringsveier" FolderPath="O:\A050000\A051350\3.7 Tegninger\E40 RIE\E41\00 Modellfiler" />
+      <FolderPath PathName="Lys" FolderPath="O:\A050000\A051350\3.7 Tegninger\E40 RIE\E44\00 Modellfiler" />
+      <FolderPath PathName="Tekniske installasjoner" FolderPath="O:\A050000\A051350\3.7 Tegninger\E40 RIE\E43\00 Modellfiler" />
     </Folderpaths>
+    <Files>
+      <File Filename="11448-05-E-430-XX-001" FolderPathName="Tekniske installasjoner" />
+      <File Filename="11448-06-E-430-XX-001" FolderPathName="Tekniske installasjoner" />
+      <File Filename="11448-07-E-430-XX-001" FolderPathName="Tekniske installasjoner" />
+      <File Filename="11448-08-E-430-XX-001" FolderPathName="Tekniske installasjoner" />
+      <File Filename="11448-05-E-440-XX-001" FolderPathName="Lys" />
+      <File Filename="11448-06-E-440-XX-001" FolderPathName="Lys" />
+      <File Filename="11448-07-E-440-XX-001" FolderPathName="Lys" />
+      <File Filename="11448-08-E-440-XX-001" FolderPathName="Lys" />
+    </Files>
+    <Attributes />
   </Settings>
   <Data />
 </DrawingManagerXML>

@@ -28,12 +28,11 @@ namespace DrawingManagerApp.ViewModels
         {
             startupSequence();
             FileFoldersCommand = new DelegateCommand(o => OpenFileFolderWindow());
-            FileManagerCommand = new DelegateCommand(o => OpenFileManagerWindow());
+            FileManagerCommand = new DelegateCommand(o => OpenFileManagerView());
+            AttributeManagerCommand = new DelegateCommand(o => OpenAttributeManagerView());
         }
 
 
-        public ICommand FileFoldersCommand { get; private set; }
-        public ICommand FileManagerCommand { get; private set; }
 
 
 
@@ -67,14 +66,17 @@ namespace DrawingManagerApp.ViewModels
 
         public void OpenFileFolderWindow()
         {
-            FileFoldersViewModel model = new FileFoldersViewModel(_xmlFilePath);
-            CurrentViewModel = model;
+            CurrentViewModel = new FileFoldersViewModel(_xmlFilePath);
         }
 
-        public void OpenFileManagerWindow()
+        public void OpenFileManagerView()
         {
-            FileManagerViewModel model = new FileManagerViewModel(_xmlFilePath);
-            CurrentViewModel = model;
+            CurrentViewModel = new FileManagerViewModel(_xmlFilePath);
+        }
+
+        public void OpenAttributeManagerView()
+        {
+            CurrentViewModel = new AttributeManagerViewModel(_xmlFilePath);
         }
 
         #endregion
@@ -101,6 +103,10 @@ namespace DrawingManagerApp.ViewModels
                 this.OnPropertyChanged("CurrentViewModel");
             }
         }
+
+        public ICommand AttributeManagerCommand { get; private set; }
+        public ICommand FileFoldersCommand { get; private set; }
+        public ICommand FileManagerCommand { get; private set; }
 
 
         #endregion

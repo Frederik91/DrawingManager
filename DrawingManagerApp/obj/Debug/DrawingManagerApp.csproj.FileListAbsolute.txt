@@ -117,3 +117,5 @@ E:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\Views\MainWindow.baml
 E:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.g.resources
 E:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.Properties.Resources.resources
 E:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\DrawingManagerApp.csproj.GenerateResource.Cache
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\AttributeManagerView.g.cs
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\Views\AttributeManagerView.baml

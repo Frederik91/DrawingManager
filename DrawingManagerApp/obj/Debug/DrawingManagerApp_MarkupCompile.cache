@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\GitHub Code\DrawingManager\DrawingManagerApp\obj\Debug\
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\obj\Debug\
 DrawingManagerApp
 none
 false
 DEBUG;TRACE
-E:\GitHub Code\DrawingManager\DrawingManagerApp\App.xaml
-3325366721
+C:\Users\frte\Documents\GitHub\DrawingManager\DrawingManagerApp\App.xaml
+424781420
 
-14-482975256
+16-485767572
 12-114506869
-Views\FileFoldersView.xaml;Views\FileManagerView.xaml;Views\MainWindow.xaml;
+Views\AttributeManagerView.xaml;Views\FileFoldersView.xaml;Views\FileManagerView.xaml;Views\MainWindow.xaml;
 
 False
 
